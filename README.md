@@ -20,7 +20,7 @@
 - [ ] 🎨 内置`多主题`，可为不同`行业`的视频制作人员提供`定制化模板`
 
 
-> 具体使用参见：[https://mdvidel.gshll.com](https://mdvidel.gshll.com)
+> 具体使用参见：[https://mdvideo.gshll.com](https://mdvideo.gshll.com)
 
 
 
