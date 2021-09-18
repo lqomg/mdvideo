@@ -25,7 +25,7 @@
 
 
   
-[点击查看一下文本的效果](https://zimeiti-1301321746.cos.ap-chongqing.myqcloud.com/mdvideo%E5%90%88%E6%88%90%E8%A7%86%E9%A2%91%E7%9A%84%E4%BE%8B%E5%AD%90.mp4)
+[点击查看一下文本的效果](https://mdvideo.gshll.com/images/mdvideo.mp4)
 
 
 
