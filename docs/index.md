@@ -6,7 +6,8 @@ hero:
     - text: 开始使用
       link: /guide
     - text: 立刻下载
-      link: https://zimeiti-1301321746.cos.ap-chongqing.myqcloud.com/MDVideo-v0.1.1-setup.exe
+      link: /guide/down
+# https://zimeiti-1301321746.cos.ap-chongqing.myqcloud.com/MDVideo-v0.1.1-setup.exe
 # features:
 #   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
 #     title: 方便快捷
@@ -20,14 +21,21 @@ hero:
 footer: Copyright © 2021<br />「Powered by [CloudBase Webify](https://webify.cloudbase.net/)」
 ---
 
-## 即可上手
+## 即可上手MDvideo
 
 
 <Alert> 复制下面markdown文本到软件试一试吧~</Alert>
+
   
-[点击查看一下文本的效果](https://zimeiti-1301321746.cos.ap-chongqing.myqcloud.com/mdvideo%E5%90%88%E6%88%90%E8%A7%86%E9%A2%91%E7%9A%84%E4%BE%8B%E5%AD%90.mp4)
+<a target="_blank" href="/images/mdvideo.mp4">MDvideo演示视频</a>
+
+
+
+> 注意：此内容用到旁白，需要配置语音引擎，见 [旁白](/guide/notice#自动语音合成为什么不生效)
+
 
 ```html
+
 | width | height | fps | name            | keep |
 | - | - | - | - | - |
 | 1920  | 1080   | 15  | mdVideo测试视频 | true |
