@@ -8,7 +8,7 @@ toc: menu
 
 ## github地址下载
 
-> [https://github.com/linqian02/mdvideo/releases/download/v0.1.1/MDVideo-v0.1.1-setup.exe](https://github.com/linqian02/mdvideo/releases/download/v0.1.1/MDVideo-v0.1.1-setup.exe)
+> [https://github.com/linqian02/mdvideo/releases/download/v0.2.0/MDVideo-v0.2.0-setup.exe](https://github.com/linqian02/mdvideo/releases/download/v0.2.0/MDVideo-v0.2.0-setup.exe)
 
 [点击查看github地址](https://github.com/linqian02/mdvideo)
 

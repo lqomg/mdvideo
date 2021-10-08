@@ -44,23 +44,23 @@ nav:
 
 > 如 `(left:0;top:0.5)` 表示该元素`左侧`距离为`0`，距离`顶部`为`视频的一半`
 
-### position 
+### ~~position~~(0.2.0版本已废弃) 
 
-内置的位置信息，`若此配置存在，left和top将失效`
+~~内置的位置信息，`若此配置存在，left和top将失效`~~
 
-- top：顶部居中
-- bottom：底部居中
-- center：垂直居中
-- top-left：左上角
-- top-right：右上角
-- center-left：垂直居中靠左
-- center-right：垂直居中靠右
-- bottom-left：左下角
-- bottom-right：右下角
+- ~~top：顶部居中~~
+- ~~bottom：底部居中~~
+- ~~center：垂直居中~~
+- ~~top-left：左上角~~
+- ~~top-right：右上角~~
+- ~~center-left：垂直居中靠左~~
+- ~~center-right：垂直居中靠右~~
+- ~~bottom-left：左下角~~
+- ~~bottom-right：右下角~~
 
-### mode
+### ~~mode~~(0.2.0版本已废弃)
 
-如何使元素适合适应屏幕
+~~如何使元素适合适应屏幕~~
 
 - contain ：元素都包含在视频内
 - contain-blur： 元素按照视频宽高以正常比列缩放，不足时会模糊处理(默认)

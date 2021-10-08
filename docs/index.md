@@ -32,15 +32,16 @@ footer: Copyright © 2021<br />「Powered by [CloudBase Webify](https://webify.c
 
 
 > 注意：此内容用到旁白，需要配置语音引擎，见 [旁白](/guide/notice#自动语音合成为什么不生效)
-
+> 以下内容是用到大量远程的在线资源，准备阶段可能会很长，建议使用本地资源替代
 
 ```html
 
 | width | height | fps | name            | keep |
 | - | - | - | - | - |
-| 1920  | 1080   | 15  | mdVideo测试视频 | true |
+| 1920  | 1080   | 15  | mdVideo | true |
 
 ---
+(animate:Colorful)
 
 # 居中的标题
 
@@ -48,13 +49,13 @@ footer: Copyright © 2021<br />「Powered by [CloudBase Webify](https://webify.c
 一张淡出的图片加一段字幕，默认持续3秒钟
 
 ---
-
+(backgroundColor:#8cc5ff)
 ## 带背景的标题
 
 `这是一段发音的字幕，默认持续时间为这段文字发音的时间`
 
 ---
-
+(animate:WaterWave)
 (duration:5)
 
 ### 新闻标题
@@ -62,9 +63,9 @@ footer: Copyright © 2021<br />「Powered by [CloudBase Webify](https://webify.c
 ![](https://cdn.beekka.com/blogimg/asset/202109/bg2021090117.jpg)
 
 (width:0.5;left:0.1;top:0.2)
-![](https://fakeimg.pl/625x375/F44336/FFF/?font=noto&text=mdVideo)
+![](http://www.ruanyifeng.com/blogimg/asset/201204/bg2012042702.jpg)
 
-(type:text;textColor:red;fontSize:0.1;left:0.3;angle:14;underline:true;)
+(type:text;textColor:red;fontSize:0.05;left:0.3;)
 一张图片加贴图，配上一段特别的文字,持续5秒
 
 ---
@@ -80,6 +81,7 @@ footer: Copyright © 2021<br />「Powered by [CloudBase Webify](https://webify.c
 &[10-25](https://www.cambridgeenglish.org/images/153149-movers-sample-listening-test-vol2.mp3)
 
 `这是一段持续10秒的音频剪辑,加上一些也段的文字`
+
 
 ```
 

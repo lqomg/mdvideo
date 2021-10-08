@@ -93,7 +93,7 @@ toc: menu
 
 还看了一看到一条大鲨鱼，场面极为壮观
 
-(type:text;textColor:red;fontSize:0.1;linethrough:true;position:top-right)
+(type:text;textColor:red;fontSize:0.1;)
 大鲨鱼
 
 ---
