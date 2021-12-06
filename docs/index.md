@@ -18,7 +18,7 @@ hero:
 #   - icon: https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png
 #     title: Feature 3
 #     desc: Balabala
-footer: Copyright © 2021<br /><a href="http://www.beian.miit.gov.cn/"><b>蜀ICP备17011586号</b></a>
+footer: Copyright © 2021<br /><a href="https://beian.miit.gov.cn/"><b>蜀ICP备17011586号</b></a>
 ---
 
 ## 即可上手MDvideo
