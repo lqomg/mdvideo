@@ -16,7 +16,9 @@ nav:
 
 <p align="center">
   
- <img src="./../../public/images/1.png" width="70%" />
+ <img src="./../../public/images/1.png" width="50%" />
+  
+ <img src="./../../public/images/4.png" width="50%" />
  
 </p> 
 
@@ -34,6 +36,7 @@ nav:
 ### 帧率
 
 每秒翻看几张图片表示的就是帧率，一般来讲帧率大于 24 的情况下才会认为该视频`流畅`
+
 
 ### 定位
 
