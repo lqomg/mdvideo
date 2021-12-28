@@ -16,7 +16,9 @@ nav:
 
 <p align="center">
   
- <img src="./../../public/images/1.png" width="70%" />
+ <img src="./../../public/images/1.png" width="50%" />
+  
+ <img src="./../../public/images/4.png" width="50%" />
  
 </p> 
 
@@ -33,13 +35,14 @@ nav:
 
 **在填写()配置信息之后，预览面板会出现配置按钮，点击可进行面板配置**
 
-<img src="/images/2.png/" />
+<img src="/images/1.png/" />
 
 ## 必要概念
 
 ### 帧率
 
 每秒翻看几张图片表示的就是帧率，一般来讲帧率大于 24 的情况下才会认为该视频`流畅`
+
 
 ### 定位
 

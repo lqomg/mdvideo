@@ -4,7 +4,9 @@ order: 5
 toc: menu
 ---
 
-<Alert>提供三种方式，任选一种</Alert>
+<Alert>提供三种方式，任选一种。</Alert>
+
+`注意：不支持Mac，安装完成运行之后再个人设置中点击更新到最新版本`
 
 ## github地址下载
 
@@ -24,6 +26,5 @@ toc: menu
   > 链接: https://pan.baidu.com/s/1kPfDIahhNo_Sk-g81QXekQ
 
    提取码: `ijkg`
-
-
+  下载完成之后在个人设置点击更新
 

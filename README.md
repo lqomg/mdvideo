@@ -6,8 +6,9 @@
 
 <p align="center">
   
- <img src="./public/images/1.png" width="70%" />
- 
+  <img src="./public/images/1.png" width="40%" />
+  
+ <img src="./public/images/4.png" width="50%" />
 </p> 
 
 ## 特性
