@@ -35,7 +35,7 @@ nav:
 
 **在填写()配置信息之后，预览面板会出现配置按钮，点击可进行面板配置**
 
-<img src="/images/1.png/" />
+<img src="./../../public/images/1.png" width="50%" />
 
 ## 必要概念
 
