@@ -23,66 +23,117 @@ footer: Copyright © 2021<br /><a href="https://beian.miit.gov.cn/"><b>蜀ICP备
 
 ## 即可上手MDvideo
 
+<video src="/images/mdvideo.mp4" controls width="500"></video>
+
+> 注意：
+> * 以下内容用到旁白，需要配置语音引擎，见 [旁白](/guide/notice#自动语音合成为什么不生效)
+> * 以下内容用到的资源文件，包括图片、视频和音频需要在本地，请下载之后在替换引入。
+> * 可以将素材资源换位远程在线资源，但是可能会有未知错误
+
 
 <Alert> 复制下面markdown文本到软件试一试吧~</Alert>
 
-  
-<a target="_blank" href="/images/mdvideo.mp4">MDvideo演示视频</a>
-
-
-
-> 注意：此内容用到旁白，需要配置语音引擎，见 [旁白](/guide/notice#自动语音合成为什么不生效)
-
-> 以下内容是用到大量远程的在线资源，准备阶段可能会很长，建议使用本地资源替代
 
 ```html
-
-| width | height | fps | name            | keep |
-| - | - | - | - | - |
-| 1920  | 1080   | 15  | mdVideo | true |
-
+| width | height | fps | name |
+| - | - | - | - |
+| 1920 | 1080 | 15 | Mdvdeio演示视频 |
 ---
-(animate:Colorful)
 
-# 居中的标题
+[sceneBgColor:#11A659;transition:Colorful;transitionTime:1.5;duration:5;]
+(top:0.28;left:0.2;fontSize:0.1;bgColor:#3A4187;animateEnd:0 0 1 1 0;animateTime:2;animateDelay:0;)
+本视频由MdVideo构建
 
-![](https://cdn.beekka.com/blogimg/asset/202109/bg2021090117.jpg)
-一张淡出的图片加一段字幕，默认持续3秒钟
+(top:0.48;left:0.06;fontSize:0.08;color:#1148EE;animateEnd:0 0 1 1 0;)
+官网地址:https://mdvideo.gshll.com/
 
----
-(backgroundColor:#8cc5ff)
-## 带背景的标题
-
-`这是一段发音的字幕，默认持续时间为这段文字发音的时间`
-
----
-(animate:WaterWave)
-(duration:5)
-
-### 新闻标题
-
-![](https://cdn.beekka.com/blogimg/asset/202109/bg2021090117.jpg)
-
-(width:0.5;left:0.1;top:0.2)
-![](http://www.ruanyifeng.com/blogimg/asset/201204/bg2012042702.jpg)
-
-(type:text;textColor:red;fontSize:0.05;left:0.3;)
-一张图片加贴图，配上一段特别的文字,持续5秒
+(top:0.6;left:0.06;fontSize:0.06;color:#1148EE;animateEnd:0 0 1 1 0;)
+问题反馈：https://github.com/linqian02/mdvideo/issues
 
 ---
 
-@[2-12](http://vjs.zencdn.net/v/oceans.mp4)
+[sceneBgColor:#4D4848;transition:WindowShades;transitionTime:2;duration:9;]
+(fontSize:0.08;color:#2B664E;animateEnd:0 0 1 1 0;animateTime:2;)
+# 图片效果演示
 
-这是一段持续10秒的视频剪辑
+![555555555.png](D:\image\1.png)
+
+(width:0.5;height:0.6;top:0.05;left:0.05;animate:bounceInLeft 2 2;)
+![](D:\image\2.png)
+
+(width:0.4;height:0.4;top:0.25;left:0.3;animate:fadeInUp 1.5 3;)
+![](D:\image\3.png)
+
+(width:0.6;height:0.6;top:0.35;left:0.4;scale:0.9;animate:rollIn 2 4;)
+![](D:\image\4.png)
 
 ---
 
-## 带背景的标题
+[sceneBgColor:#4CA38F;transition:BackOff;transitionTime:2;duration:6;]
+(fontSize:0.06;color:#9EDA10;animateEnd:0 0 1 1 0;animateTime:2;)
+# 文字效果展示
 
-&[10-25](https://www.cambridgeenglish.org/images/153149-movers-sample-listening-test-vol2.mp3)
+(top:0.05;left:0.05;scale:1.1;fontSize:0.08;animate:rotateIn 2 2.5;)
+一段演示文字
 
-`这是一段持续10秒的音频剪辑,加上一些也段的文字`
+(top:0.051;left:0.7;rotate:20;fontSize:0.09;color:#AD7B7B;animate:fadeInLeft 1.5 2.5;)
+一段演示文字
 
+(top:0.401;left:0.35;scale:1.2;fontSize:0.09;color:#F11A90;animate:fadeInUp 1 2.5;)
+一段演示文字
+
+(top:0.7;left:0.15;opacity:0.6;fontSize:0.1;color:#269141;animate:fadeInDown 2 2.5;animateEnd:0 0 1 1 0;)
+一段演示文字
+
+(top:0.7;left:0.47;opacity:0.6;fontSize:0.14;color:#881212;animate:fadeInDown 1 3;)
+一段演示文字
+
+---
+
+[sceneBgColor:#DCCFCF;transition:BackOff;transitionTime:2;duration:8;]
+(fontSize:0.06;color:#F70C1C;animateEnd:0 0 1 1 0;animateTime:2;animateEase:Quartic.In;)
+# 视频效果展示
+
+(width:0.5;height:0.5;from:2;to:12;animate:rotateIn 2 3;)
+@[](D:\video\1.mp4)
+
+(width:0.5;height:0.5;left:0.5;to:10;animate:backIn 2 3;)
+@[](D:\video\1.mp4)
+
+(width:0.5;height:0.5;top:0.5;from:3;to:13;animate:rotateIn 2 3;)
+@[](D:\video\1.mp4)
+
+(width:0.5;height:0.5;top:0.5;left:0.5;from:7;to:17;animate:fadeIn 2 3;)
+@[](D:\video\1.mp4)
+
+---
+
+[sceneBgColor:#2F3A76;transition:Oblique;transitionTime:2;duration:7;]
+# 语音旁白演示
+
+*这是一段语音旁白，会自动生成字幕*
+
+---
+
+[sceneBgColor:#854E4E;duration:10;]
+# 音频剪辑演示
+
+(to:10;)
+&[](D:\audio\1.mp3)
+
+---
+
+[sceneBgColor:#4EBEA7;transition:BackOff;transitionTime:1.5;duration:6;]
+(animateEnd:0 0 1 1 0;animateTime:1.5;)
+# bug及问题反馈
+
+(top:0.46;left:0.24;fontSize:0.06;animate:fadeIn 2 2.5;animateEnd:0 0 1 1 0;)
+QQ群：576301295
+
+(top:0.56;left:0.24;fontSize:0.06;animate:fadeIn 2 2.5;animateEnd:0 0 1 1 0;)
+网址:https://mdvideo.gshll.com/
+
+---
 
 ```
 
