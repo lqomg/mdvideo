@@ -144,6 +144,28 @@ MDVideo 最开始的初衷仅仅是为了更好的对视频进行编辑，如裁
 | `top`          | 图片相对于屏幕最上面的距离             | `0`                 | `0` 到 `1`      |
    
 
+
+## 代码
+
+
+Mdvideo会将如下代码转为图片，参数与图片一直
+
+```js
+
+const set = new Set();
+set.add(1);
+set.add("Lydia");
+set.add({name: "Lydia"});
+
+for (let item of set) {
+    console.log(item + 2);
+}
+ ```
+如下：
+<p>
+<img src="../../public/images/code.png" width="60%" />
+</p>
+
 ## 贴图
 
 给视频添加一贴图或者水印表情的方式和添加图片一致，
