@@ -79,3 +79,9 @@
 
 ```
 
+## 依赖 | 感谢
+
+[electron](https://github.com/electron/electron)
+[editly](https://github.com/mifi/editly)
+[FFCreator](https://github.com/tnfe/FFCreator)
+
