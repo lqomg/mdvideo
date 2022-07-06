@@ -21,6 +21,7 @@ hero:
 footer: Copyright © 2021 <a href="https://beian.miit.gov.cn/"><b>蜀ICP备17011586号</b></a>
 ---
 
+# `目前的版本太难用了，配置太复杂，Bug还多，期待下一个Plus版本吧！开发中...`
 ## 即可上手MDvideo
 
 <video src="/images/mdvideo.mp4" controls width="600"></video>
