@@ -4,23 +4,19 @@ order: 4
 toc: menu
 ---
 
-## 自动语音合成为什么不生效
+## 安装之后无法正常运行，提示错误
 
- 旁白发言需要配置语音引擎，软件支持`百度`或者`腾讯`的语音引擎。
+ 一些电脑需要安装Visual Studio 2010，点击下面链接下载并安装。
 
- 请在相关官网申请，新用户都会有足够的免费额度。
+[Visual Studio 2010(x86)](https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe)
 
- 软件本身提供`免费`的百度语音引擎,但只有四个简单的音色选择
+[Visual Studio 2010(x64)](https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe)
 
-> APP_ID: 18786482
-> API_KEY: tX4P8LEmPa2huONDxhzslCRO
-> SECRET_KEY: dTqqd94HYT6Gwp5EI2XPwyVoGGPMwfCZ
+也可前往微软官方下载：
+
+[https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+
 
  其他问题请加群：`576301295`
 
-
-
-## 加入的本地资源无效
-
-> 请先将所有需要引用的资源加入之后,重启软件
 
