@@ -1,7 +1,7 @@
 ## 什么是 AX Video?
 
 
-> [此版本暂时不维护，请更新版本 axvideo](https://github.com/linqian02/axvideo/)
+> ** 此版本暂时不维护，请进入一下链接 ，下载相关软件资源** ,
 > [https://github.com/linqian02/axvideo/](https://github.com/linqian02/axvideo/)
  
 
