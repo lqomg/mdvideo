@@ -21,7 +21,7 @@ hero:
 footer: Copyright © 2021 <a href="https://beian.miit.gov.cn/"><b>蜀ICP备17011586号</b></a>
 ---
 
-# `MdVideo Plus版本发布了！持续更新中...`
+# `MdVideo Plus版本开发中...`
 ## 注意事项
 
 <!-- <video src="/images/mdvideo.mp4" controls width="600"></video> -->
