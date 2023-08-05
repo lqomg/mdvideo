@@ -2,7 +2,7 @@
 
 
 > **此版本暂时不维护，请进入一下链接 ，下载相关软件资源** ,
-> [https://github.com/linqian02/axvideo/](https://github.com/lqomg/axvideo/)
+> [https://github.com/linqian02/axvideo/](https://github.com/lqomg/wvovw/)
  
 
 > **AX Video 爱写视频**，是一个桌面软件，自动将 Markdown 文档转成一段视频的短视频编辑器，支持操作界面
