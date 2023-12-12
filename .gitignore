@@ -1,24 +1,27 @@
-
-# dependencies
-/node_modules
-/npm-debug.log*
-/yarn-error.log
-/yarn.lock
-/package-lock.json
-
-# production
-/dist
-/docs-dist
-
-# misc
 .DS_Store
+node_modules
+/logs
+/resource
 
-# umi
-.umi
-.umi-production
-.umi-test
+# local env files
 .env.local
+.env.*.local
 
-# ide
-/.vscode
-/.idea
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+/server/cache
+/server/public/psd_static
+/server/public/resource
+/server/public/static/demo素材
+/assets/demo素材

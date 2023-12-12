@@ -1,0 +1,9 @@
+.demo-code{
+  background-color: var(--vp-code-block-bg);
+  border-radius: 10px;
+  padding:12px;
+  white-space: break-spaces;
+}
+.VPImage.image-src{
+  border-radius: 20px;
+}
