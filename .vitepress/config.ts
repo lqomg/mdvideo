@@ -6,7 +6,7 @@ const pkg = require('vitepress/package.json')
 
 export default defineConfig({
   lang: 'zh-CH',
-  title: 'MD Video',
+  title: '呜噢哇',
   description: '将Markdown文档快速转为视频的编辑器.',
   lastUpdated: true,
   cleanUrls: false,
