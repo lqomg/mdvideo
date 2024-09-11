@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./chunks/framework.419948d5.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guide/markdown.md","filePath":"guide/markdown.md","lastUpdated":1702378897000}'),r={name:"guide/markdown.md"};function o(d,n,s,c,i,m){return t(),a("div")}const f=e(r,[["render",o]]);export{_ as __pageData,f as default};
