@@ -1,1 +1,0 @@
-import{_ as t,o as e,c as a}from"./chunks/framework.419948d5.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guide/chart.md","filePath":"guide/chart.md","lastUpdated":1702378897000}'),r={name:"guide/chart.md"};function c(o,s,d,n,i,p){return e(),a("div")}const f=t(r,[["render",c]]);export{m as __pageData,f as default};
