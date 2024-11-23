@@ -1,0 +1,16 @@
+diff --git a/node_modules/ark.db/dist/adapters/Database.js b/node_modules/ark.db/dist/adapters/Database.js
+index eb911d6..1ff37a2 100644
+--- a/node_modules/ark.db/dist/adapters/Database.js
++++ b/node_modules/ark.db/dist/adapters/Database.js
+@@ -20,10 +20,7 @@ class Database {
+      */
+     constructor(file = "arkdb.json") {
+         file = file.endsWith(".json") ? file : `${file}.json`;
+-        this.dbFilePath =
+-            file === "arkdb.json" || path_1.isAbsolute(file)
+-                ? process.cwd() + path_1.sep + file
+-                : Util_1.absolute(path_1.dirname(parent_module_1.default()) + path_1.sep, file);
++        this.dbFilePath = file;
+         this.cache = {};
+         if (graceful_fs_1.existsSync(this.dbFilePath))
+             this.cache = this.read();

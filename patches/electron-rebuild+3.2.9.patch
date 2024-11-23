@@ -1,0 +1,13 @@
+diff --git a/node_modules/electron-rebuild/lib/src/module-type/node-gyp.js b/node_modules/electron-rebuild/lib/src/module-type/node-gyp.js
+index 8fd6878..804d90f 100644
+--- a/node_modules/electron-rebuild/lib/src/module-type/node-gyp.js
++++ b/node_modules/electron-rebuild/lib/src/module-type/node-gyp.js
+@@ -33,7 +33,7 @@ class NodeGyp extends _1.NativeModule {
+         }
+         args.push(...(await this.buildArgsFromBinaryField()));
+         if (this.rebuilder.msvsVersion) {
+-            args.push(`--msvs_version=${this.rebuilder.msvsVersion}`);
++            args.push(`--msvs_version=${2017}`);
+         }
+         // Headers of old Electron versions do not have a valid config.gypi file
+         // and --force-process-config must be passed to node-gyp >= 8.4.0 to
