@@ -1,0 +1,223 @@
+diff --git a/node_modules/@codemirror/autocomplete/dist/index.js b/node_modules/@codemirror/autocomplete/dist/index.js
+index ac2e574..daf3c73 100644
+--- a/node_modules/@codemirror/autocomplete/dist/index.js
++++ b/node_modules/@codemirror/autocomplete/dist/index.js
+@@ -12,21 +12,21 @@ class CompletionContext {
+     these for you.)
+     */
+     constructor(
+-    /**
+-    The editor state that the completion happens in.
+-    */
+-    state, 
+-    /**
+-    The position at which the completion is happening.
+-    */
+-    pos, 
+-    /**
+-    Indicates whether completion was activated explicitly, or
+-    implicitly by typing. The usual way to respond to this is to
+-    only return completions when either there is part of a
+-    completable entity before the cursor, or `explicit` is true.
+-    */
+-    explicit) {
++        /**
++        The editor state that the completion happens in.
++        */
++        state,
++        /**
++        The position at which the completion is happening.
++        */
++        pos,
++        /**
++        Indicates whether completion was activated explicitly, or
++        implicitly by typing. The usual way to respond to this is to
++        only return completions when either there is part of a
++        completable entity before the cursor, or `explicit` is true.
++        */
++        explicit) {
+         this.state = state;
+         this.pos = pos;
+         this.explicit = explicit;
+@@ -43,9 +43,11 @@ class CompletionContext {
+         let token = syntaxTree(this.state).resolveInner(this.pos, -1);
+         while (token && types.indexOf(token.name) < 0)
+             token = token.parent;
+-        return token ? { from: token.from, to: this.pos,
++        return token ? {
++            from: token.from, to: this.pos,
+             text: this.state.sliceDoc(token.from, this.pos),
+-            type: token.type } : null;
++            type: token.type
++        } : null;
+     }
+     /**
+     Get the match of the given expression directly before the
+@@ -232,7 +234,7 @@ class FuzzyMatcher {
+         if (chars.length == 1) {
+             let first = codePointAt(word, 0), firstSize = codePointSize(first);
+             let score = firstSize == word.length ? 0 : -100 /* Penalty.NotFull */;
+-            if (first == chars[0]) ;
++            if (first == chars[0]);
+             else if (first == folded[0])
+                 score += -200 /* Penalty.CaseFold */;
+             else
+@@ -426,7 +428,7 @@ function optionContent(config) {
+                 return null;
+             let detailElt = document.createElement("span");
+             detailElt.className = "cm-completionDetail";
+-            detailElt.textContent = completion.detail;
++            detailElt.innerHTML = completion.detail;
+             return detailElt;
+         },
+         position: 80
+@@ -542,7 +544,15 @@ class CompletionTooltip {
+             let { info } = completion;
+             if (!info)
+                 return;
+-            let infoResult = typeof info === "string" ? document.createTextNode(info) : info(completion);
++            let infoResult;
++            if (typeof info === "string") {
++                const span = document.createElement('span');
++                span.innerHTML = info;
++                infoResult = span;
++
++            } else {
++                infoResult = info(completion);
++            }
+             if (!infoResult)
+                 return;
+             if ("then" in infoResult) {
+@@ -830,7 +840,7 @@ class CompletionState {
+ function sameResults(a, b) {
+     if (a == b)
+         return true;
+-    for (let iA = 0, iB = 0;;) {
++    for (let iA = 0, iB = 0; ;) {
+         while (iA < a.length && !a[iA].hasResult)
+             iA++;
+         while (iB < b.length && !b[iB].hasResult)
+@@ -1373,14 +1383,16 @@ class Snippet {
+         return new Snippet(lines, positions);
+     }
+ }
+-let fieldMarker = /*@__PURE__*/Decoration.widget({ widget: /*@__PURE__*/new class extends WidgetType {
++let fieldMarker = /*@__PURE__*/Decoration.widget({
++    widget: /*@__PURE__*/new class extends WidgetType {
+         toDOM() {
+             let span = document.createElement("span");
+             span.className = "cm-snippetFieldPosition";
+             return span;
+         }
+         ignoreEvent() { return false; }
+-    } });
++    }
++});
+ let fieldRange = /*@__PURE__*/Decoration.mark({ class: "cm-snippetField" });
+ class ActiveSnippet {
+     constructor(ranges, active) {
+@@ -1721,8 +1733,10 @@ const deleteBracketPair = ({ state, dispatch }) => {
+             let before = prevChar(state.doc, range.head);
+             for (let token of tokens) {
+                 if (token == before && nextChar(state.doc, range.head) == closing(codePointAt(token, 0)))
+-                    return { changes: { from: range.head - token.length, to: range.head + token.length },
+-                        range: EditorSelection.cursor(range.head - token.length) };
++                    return {
++                        changes: { from: range.head - token.length, to: range.head + token.length },
++                        range: EditorSelection.cursor(range.head - token.length)
++                    };
+             }
+         }
+         return { range: dont = range };
+@@ -1781,14 +1795,18 @@ function prevChar(doc, pos) {
+ function handleOpen(state, open, close, closeBefore) {
+     let dont = null, changes = state.changeByRange(range => {
+         if (!range.empty)
+-            return { changes: [{ insert: open, from: range.from }, { insert: close, from: range.to }],
++            return {
++                changes: [{ insert: open, from: range.from }, { insert: close, from: range.to }],
+                 effects: closeBracketEffect.of(range.to + open.length),
+-                range: EditorSelection.range(range.anchor + open.length, range.head + open.length) };
++                range: EditorSelection.range(range.anchor + open.length, range.head + open.length)
++            };
+         let next = nextChar(state.doc, range.head);
+         if (!next || /\s/.test(next) || closeBefore.indexOf(next) > -1)
+-            return { changes: { insert: open + close, from: range.head },
++            return {
++                changes: { insert: open + close, from: range.head },
+                 effects: closeBracketEffect.of(range.head + open.length),
+-                range: EditorSelection.cursor(range.head + open.length) };
++                range: EditorSelection.cursor(range.head + open.length)
++            };
+         return { range: dont = range };
+     });
+     return dont ? null : state.update(changes, {
+@@ -1799,8 +1817,10 @@ function handleOpen(state, open, close, closeBefore) {
+ function handleClose(state, _open, close) {
+     let dont = null, changes = state.changeByRange(range => {
+         if (range.empty && nextChar(state.doc, range.head) == close)
+-            return { changes: { from: range.head, to: range.head + close.length, insert: close },
+-                range: EditorSelection.cursor(range.head + close.length) };
++            return {
++                changes: { from: range.head, to: range.head + close.length, insert: close },
++                range: EditorSelection.cursor(range.head + close.length)
++            };
+         return dont = { range };
+     });
+     return dont ? null : state.update(changes, {
+@@ -1814,35 +1834,45 @@ function handleSame(state, token, allowTriple, config) {
+     let stringPrefixes = config.stringPrefixes || defaults.stringPrefixes;
+     let dont = null, changes = state.changeByRange(range => {
+         if (!range.empty)
+-            return { changes: [{ insert: token, from: range.from }, { insert: token, from: range.to }],
++            return {
++                changes: [{ insert: token, from: range.from }, { insert: token, from: range.to }],
+                 effects: closeBracketEffect.of(range.to + token.length),
+-                range: EditorSelection.range(range.anchor + token.length, range.head + token.length) };
++                range: EditorSelection.range(range.anchor + token.length, range.head + token.length)
++            };
+         let pos = range.head, next = nextChar(state.doc, pos), start;
+         if (next == token) {
+             if (nodeStart(state, pos)) {
+-                return { changes: { insert: token + token, from: pos },
++                return {
++                    changes: { insert: token + token, from: pos },
+                     effects: closeBracketEffect.of(pos + token.length),
+-                    range: EditorSelection.cursor(pos + token.length) };
++                    range: EditorSelection.cursor(pos + token.length)
++                };
+             }
+             else if (closedBracketAt(state, pos)) {
+                 let isTriple = allowTriple && state.sliceDoc(pos, pos + token.length * 3) == token + token + token;
+                 let content = isTriple ? token + token + token : token;
+-                return { changes: { from: pos, to: pos + content.length, insert: content },
+-                    range: EditorSelection.cursor(pos + content.length) };
++                return {
++                    changes: { from: pos, to: pos + content.length, insert: content },
++                    range: EditorSelection.cursor(pos + content.length)
++                };
+             }
+         }
+         else if (allowTriple && state.sliceDoc(pos - 2 * token.length, pos) == token + token &&
+             (start = canStartStringAt(state, pos - 2 * token.length, stringPrefixes)) > -1 &&
+             nodeStart(state, start)) {
+-            return { changes: { insert: token + token + token + token, from: pos },
++            return {
++                changes: { insert: token + token + token + token, from: pos },
+                 effects: closeBracketEffect.of(pos + token.length),
+-                range: EditorSelection.cursor(pos + token.length) };
++                range: EditorSelection.cursor(pos + token.length)
++            };
+         }
+         else if (state.charCategorizer(pos)(next) != CharCategory.Word) {
+             if (canStartStringAt(state, pos, stringPrefixes) > -1 && !probablyInString(state, pos, token, stringPrefixes))
+-                return { changes: { insert: token + token, from: pos },
++                return {
++                    changes: { insert: token + token, from: pos },
+                     effects: closeBracketEffect.of(pos + token.length),
+-                    range: EditorSelection.cursor(pos + token.length) };
++                    range: EditorSelection.cursor(pos + token.length)
++                };
+         }
+         return { range: dont = range };
+     });

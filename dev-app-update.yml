@@ -1,0 +1,3 @@
+provider: generic
+url: http://127.0.0.1:4130/public/soft/
+updaterCacheDirName: wvovw-updater
