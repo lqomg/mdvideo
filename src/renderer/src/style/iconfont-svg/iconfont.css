@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "iconfont-svg"; /* Project id 4428612 */
+  src: url('iconfont.woff2?t=1709187105574') format('woff2'),
+       url('iconfont.woff?t=1709187105574') format('woff'),
+       url('iconfont.ttf?t=1709187105574') format('truetype');
+}
+
+.iconfont-svg {
+  font-family: "iconfont-svg" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.msvg-wenjian:before {
+  content: "\e614";
+}
+
+.msvg-wenjian1:before {
+  content: "\e65f";
+}
+
+.msvg-wenjian2:before {
+  content: "\e683";
+}
+
+.msvg-wenjianjia:before {
+  content: "\e635";
+}
+
+.msvg-wenjianjia1:before {
+  content: "\e65c";
+}
+
+.msvg-wenjian3:before {
+  content: "\ec63";
+}
+
+.msvg-wenjianjia2:before {
+  content: "\100a6";
+}
+
+.msvg-Video:before {
+  content: "\e763";
+}
+
+.msvg-shipin5:before {
+  content: "\e66b";
+}
+
+.msvg-tupianwenjian:before {
+  content: "\e68e";
+}
+
+.msvg-shipinwenjian:before {
+  content: "\e6d8";
+}
+
+.msvg-gif3:before {
+  content: "\e68f";
+}
+
+.msvg-GIF:before {
+  content: "\e679";
+}
+
+.msvg-Markdown:before {
+  content: "\e751";
+}
+
+.msvg-tupian2:before {
+  content: "\e68d";
+}
+
+.msvg-yinpin:before {
+  content: "\e67a";
+}
+
+.msvg-gif1:before {
+  content: "\e61d";
+}
+
+.msvg-ziti:before {
+  content: "\e64d";
+}
+
+.msvg-yinpinwenjian:before {
+  content: "\e712";
+}
+
+.msvg-fonts:before {
+  content: "\e6dc";
+}
+
+.msvg-zuopin-copy:before {
+  content: "\e60a";
+}
+
+.msvg-ziti1:before {
+  content: "\e669";
+}
+
+.msvg-gif2:before {
+  content: "\e6a5";
+}
+
+.msvg-shipin2:before {
+  content: "\f4f7";
+}
+
+.msvg-shipin3:before {
+  content: "\f7fb";
+}
+
+.msvg-ttf:before {
+  content: "\e88a";
+}
+
+.msvg-shipin4:before {
+  content: "\ec5b";
+}
+
+.msvg-tupian4:before {
+  content: "\ec62";
+}
+
+.msvg-tupian5:before {
+  content: "\100a8";
+}
+

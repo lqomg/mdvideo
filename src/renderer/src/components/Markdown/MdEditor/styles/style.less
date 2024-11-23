@@ -1,0 +1,26 @@
+@import '@renderer/components/Markdown/MdEditor/styles/vars.less';
+
+@import '@renderer/components/Markdown/MdEditor/components/Checkbox/index.less';
+@import '@renderer/components/Markdown/MdEditor/components/Divider/index.less';
+@import '@renderer/components/Markdown/MdEditor/components/Dropdown/index.less';
+@import '@renderer/components/Markdown/MdEditor/components/Modal/index.less';
+
+@import '@renderer/components/Markdown/MdEditor/layouts/Content/index.less';
+@import '@renderer/components/Markdown/MdEditor/layouts/Footer/index.less';
+@import '@renderer/components/Markdown/MdEditor/layouts/Modals/index.less';
+@import '@renderer/components/Markdown/MdEditor/layouts/Toolbar/index.less';
+
+@import '@renderer/components/Markdown/MdEditor/styles/codeMirror.less';
+
+@import '@renderer/components/Markdown/MdEditor/styles/preview.less';
+
+.@{prefix}-fullscreen {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto !important;
+  height: auto !important;
+  z-index: 10000;
+}

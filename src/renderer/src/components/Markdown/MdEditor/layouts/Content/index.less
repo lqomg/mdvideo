@@ -1,0 +1,57 @@
+.@{prefix} {
+  &-content {
+    display: flex;
+    // height: calc(100% - @toolBarHeight - 2 * @toolBarPadding - 1px);
+    flex: 1;
+    height: 0;
+    flex-shrink: 0;
+  }
+
+  &-input-wrapper {
+    flex: 1;
+    box-sizing: border-box;
+  }
+
+  &-html {
+    font-size: 16px;
+    word-break: break-all;
+  }
+}
+
+[id^="dmermaid"] {
+  position: absolute;
+  left: -10000px;
+  top: -10000px;
+  z-index: -10000;
+}
+
+.default-theme p.scene-config {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.2;
+  padding: 4px 6px;
+  color: var(--el-text-color-primary);
+  background-color: var(--el-bg-color-page);
+  & + br{
+    display: none;
+  }
+}
+.element-config{
+  display: none;
+}
+p[data-config="1"]{
+  border-radius: 6px;
+  padding: 1em;
+  background-color: var(--el-bg-color-page);
+  color: var(--el-text-color-primary);
+  padding-top: 24px;
+  position: relative;
+  &::before{
+    content: '场景配置';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: small;
+    color: var(--el-color-primary);
+  }
+}

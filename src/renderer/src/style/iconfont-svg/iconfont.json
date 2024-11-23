@@ -1,0 +1,212 @@
+{
+  "id": "4428612",
+  "name": "mdvideo-svg",
+  "font_family": "iconfont-svg",
+  "css_prefix_text": "msvg-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3187396",
+      "name": "文件",
+      "font_class": "wenjian",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "4248077",
+      "name": "文件",
+      "font_class": "wenjian1",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "4482983",
+      "name": "文件",
+      "font_class": "wenjian2",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    },
+    {
+      "icon_id": "5194036",
+      "name": "文件夹",
+      "font_class": "wenjianjia",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "12095308",
+      "name": "文件夹",
+      "font_class": "wenjianjia1",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "23949512",
+      "name": "文件",
+      "font_class": "wenjian3",
+      "unicode": "ec63",
+      "unicode_decimal": 60515
+    },
+    {
+      "icon_id": "27804455",
+      "name": "文件夹",
+      "font_class": "wenjianjia2",
+      "unicode": "100a6",
+      "unicode_decimal": 65702
+    },
+    {
+      "icon_id": "27994549",
+      "name": "Video",
+      "font_class": "Video",
+      "unicode": "e763",
+      "unicode_decimal": 59235
+    },
+    {
+      "icon_id": "28675907",
+      "name": "视频",
+      "font_class": "shipin5",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "29022760",
+      "name": "图片文件",
+      "font_class": "tupianwenjian",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "30101516",
+      "name": "视频文件",
+      "font_class": "shipinwenjian",
+      "unicode": "e6d8",
+      "unicode_decimal": 59096
+    },
+    {
+      "icon_id": "33128282",
+      "name": "gif",
+      "font_class": "gif3",
+      "unicode": "e68f",
+      "unicode_decimal": 59023
+    },
+    {
+      "icon_id": "34649846",
+      "name": "GIF",
+      "font_class": "GIF",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "35942099",
+      "name": "Markdown",
+      "font_class": "Markdown",
+      "unicode": "e751",
+      "unicode_decimal": 59217
+    },
+    {
+      "icon_id": "4482981",
+      "name": "图片",
+      "font_class": "tupian2",
+      "unicode": "e68d",
+      "unicode_decimal": 59021
+    },
+    {
+      "icon_id": "5262271",
+      "name": "音频",
+      "font_class": "yinpin",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "5460817",
+      "name": "gif",
+      "font_class": "gif1",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "6304822",
+      "name": "字体",
+      "font_class": "ziti",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "6640481",
+      "name": "音频文件",
+      "font_class": "yinpinwenjian",
+      "unicode": "e712",
+      "unicode_decimal": 59154
+    },
+    {
+      "icon_id": "6857365",
+      "name": "fonts",
+      "font_class": "fonts",
+      "unicode": "e6dc",
+      "unicode_decimal": 59100
+    },
+    {
+      "icon_id": "8876195",
+      "name": "作品",
+      "font_class": "zuopin-copy",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "12244475",
+      "name": "字体",
+      "font_class": "ziti1",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "17290933",
+      "name": "gif",
+      "font_class": "gif2",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "21395482",
+      "name": "视频",
+      "font_class": "shipin2",
+      "unicode": "f4f7",
+      "unicode_decimal": 62711
+    },
+    {
+      "icon_id": "22759264",
+      "name": "视频",
+      "font_class": "shipin3",
+      "unicode": "f7fb",
+      "unicode_decimal": 63483
+    },
+    {
+      "icon_id": "23404551",
+      "name": "ttf",
+      "font_class": "ttf",
+      "unicode": "e88a",
+      "unicode_decimal": 59530
+    },
+    {
+      "icon_id": "23949483",
+      "name": "视频",
+      "font_class": "shipin4",
+      "unicode": "ec5b",
+      "unicode_decimal": 60507
+    },
+    {
+      "icon_id": "23949508",
+      "name": "图片",
+      "font_class": "tupian4",
+      "unicode": "ec62",
+      "unicode_decimal": 60514
+    },
+    {
+      "icon_id": "27804473",
+      "name": "图片",
+      "font_class": "tupian5",
+      "unicode": "100a8",
+      "unicode_decimal": 65704
+    }
+  ]
+}
