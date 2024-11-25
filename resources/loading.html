@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加载中...</title>
+    <style>
+        section.loader {
+            font-family: Consolas, monaco, monospace;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #eeeff3;
+            color: #626aef;
+        }
+
+        section.loader .loader-center {
+            width: 300px;
+            height: 100px;
+            line-height: 100px;
+
+            margin: 0 auto;
+            text-align: center;
+            font-size: 38px;
+            letter-spacing: -6px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: -50px;
+
+        }
+
+        section.loader .loader-center .chars .dots .char {
+            font-size: 150%;
+            display: inline-block;
+        }
+
+        /* animation starts here */
+        .dots .dot {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .dot._dot-1 {
+            animation: dot_1 1s ease-in-out infinite;
+            animation-fill-mode: backwards;
+            animation-direction: alternate;
+        }
+
+        .dot._dot-2 {
+            animation: dot_2 1s ease-in-out infinite;
+            animation-fill-mode: backwards;
+            animation-direction: alternate;
+            animation-delay: 1s;
+        }
+
+        .dot._dot-3 {
+            animation: dot_3 1s ease-in-out infinite;
+            animation-fill-mode: backwards;
+            animation-direction: alternate;
+            animation-delay: 0.5s;
+        }
+
+
+        @keyframes dot_1 {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            50% {
+                top: 30px;
+                left: 20px;
+            }
+
+            100% {
+                top: 0px;
+                left: 40px;
+            }
+        }
+
+
+        @keyframes dot_2 {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            50% {
+                top: -30px;
+                left: 20px;
+            }
+
+            100% {
+                top: 0px;
+                left: 40px;
+            }
+        }
+
+
+        @keyframes dot_3 {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            50% {
+                top: -30px;
+                left: -40px;
+            }
+
+            100% {
+                top: 0px;
+                left: -80px;
+            }
+        }
+
+        section .author {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+
+            font-size: 80%;
+
+            padding: 5px 0;
+            text-align: center;
+
+            color: #626aef;
+            opacity: 0.8;
+        }
+
+        section .author a {
+            color: #626aef;
+            text-decoration: none;
+        }
+
+        section .author a:hover {
+            color: #60D69D;
+        }
+
+        .affiliate-container {
+            opacity: 0.6;
+            position: absolute;
+            right: -20px;
+            top: 0px;
+            transform: scale(.8);
+            transition: 0.2s all ease-in-out;
+            margin-top: 0;
+            justify-content: flex-end;
+        }
+
+        .affiliate-container:hover {
+            opacity: 0.8;
+            transform: scale(1);
+        }
+    </style>
+</head>
+
+<body>
+    <section class='loader'>
+        <div class='loader-center'>
+            <div class='chars'>
+                <span class='char brace'>{</span>
+                <span class='dots'>
+                    <span class='char dot _dot-1'>.</span>
+                    <span class='char dot _dot-2'>.</span>
+                    <span class='char dot _dot-3'>.</span>
+                </span>
+                <span class='char brace'>}</span>
+            </div>
+        </div>
+
+
+        <article class='author'>
+            <a href='javasript:void(0);' target='_blank'>MD+ Video</a> <a href='javasript:void(0);'>@一款普通的短视频编辑器</a>
+        </article>
+
+
+        <div class="affiliate-container">
+            <a href='javasript:void(0);' target="_blank" class="wp-overlay-link"></a>
+            <div class="wp-icon-circle">
+                <span>提示</span>
+            </div>
+
+            <div class="the-text">
+                <span>加载软件资源中，请稍等...</span>
+            </div>
+        </div>
+
+    </section>
+
+
+    <span
+        style="opacity: 0.5;position: fixed; text-align: center; bottom: 0; left: 20px; right: 20px;display: block; margin: 20px auto; width: 200px;"
+        href='javasript:void(0);' target="_blank">
+        <span alt="WvOvW" style="height: 41px !important;width: 174px !important;color:#626aef;">MD Video(mdvideo.wvovw.com)</span>
+    </span>
+</body>
+
+</html>
