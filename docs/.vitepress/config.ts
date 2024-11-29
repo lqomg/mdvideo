@@ -12,7 +12,7 @@ export default defineConfig({
   cleanUrls: false,
 
   sitemap: {
-    hostname: 'https://mdvideo.wvovw.com',
+    hostname: 'https://www.wvovw.com',
     transformItems(items) {
       return items.filter((item) => !item.url.includes('migration'))
     }
@@ -46,10 +46,10 @@ export default defineConfig({
       '/guide/': { base: '/guide/', items: sidebarGuide() }
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/lqomg/wvovw' }
+      { icon: 'github', link: 'https://github.com/lqomg/mdvideo' }
     ],
     footer: {
-      message: 'mdvideo.wvovw.com MD+ Video.',
+      message: 'www.wvovw.com MD+ Video.',
       copyright: 'Copyright © 2023-present Qian Lin'
     },
     // carbonAds: {
