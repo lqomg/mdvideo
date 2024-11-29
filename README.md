@@ -6,9 +6,9 @@
 
 参看详情：
 
-[官网](https://mdvideo.wvovw.com/)
+[官网](https://www.wvovw.com/)
 
-[演示地址](https://mdvideo.wvovw.com/guide/what-is-wvovw.html)
+[演示地址](https://www.wvovw.com/guide/what-is-wvovw.html)
 
 ## 示例
 
