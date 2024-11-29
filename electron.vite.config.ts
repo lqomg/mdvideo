@@ -18,7 +18,20 @@ export default defineConfig({
         },
         output: {
           format: 'cjs',
-        }
+        },
+        external: [
+          'ffcreator',
+          'fluent-ffmpeg',
+          'wrap-ansi',
+          'gl',
+          'canvas',
+          'compressing',
+          'inkpaint',
+          'nedb',
+          '@ffmpeg-installer/ffmpeg',
+          '@ffprobe-installer/ffprobe',
+          'tencentcloud-sdk-nodejs'
+        ]
       }
     },
     resolve: {
@@ -44,6 +57,7 @@ export default defineConfig({
   },
   renderer: {
     build: {
+      target: 'chrome70',
       minify: true,
       cssMinify: true
     },
@@ -58,7 +72,18 @@ export default defineConfig({
     plugins: [
       vue(),
       vueJsx(),
-      VueTypeImports()
+      VueTypeImports(),
+      {
+        ...esbuild({
+          target: 'chrome70',
+          // 如有需要可以在这里加 js ts 之类的其他后缀
+          include: /(\.vue|\.ts|\.tsx)$/,
+          loaders: {
+            '.vue': 'js'
+          }
+        }),
+        enforce: 'post'
+      }
     ]
   }
 });
